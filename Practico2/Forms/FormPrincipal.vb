@@ -1,14 +1,13 @@
 ﻿Public Class FrmPrincipal
     Private Sub BtnEnviar_Click(sender As Object, e As EventArgs) Handles BtnEnviar.Click
-        Dim l As New List(Of String)
+        ' En este metodo se debe realizar la validacion de los datos del formulario.
+        ' Se debe trabajar con la instancia "p" de Persona, cargando los datos del 
+        ' formulario en sus atributos, y ejecutando los metodos de validacion.
+        ' Una vez validado el formulario, se debe mostrar FormularioDatos con la
+        ' informacion proveniente de este formulario.
+
         Dim p As New Persona
 
-        For Each line As String In Me.txtTelefonos.Text.Split(vbLf)
-            l.Add(line)
-        Next
-        p.SetTelefono(l)
-
-        MsgBox(p.GetTelefono())
 
     End Sub
 
