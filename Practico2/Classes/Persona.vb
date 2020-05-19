@@ -18,7 +18,7 @@
         Me.apellido = apellidoRecibido
     End Sub
 
-    Public Sub SetTelefono(telefonoRecibido As String))
+    Public Sub SetTelefono(telefonoRecibido As String)
         Me.telefono = telefonoRecibido
     End Sub
 
@@ -46,8 +46,17 @@
         Return Me.telefono
     End Function
 
-    Public Function ValidarID()
+    Public Function ValidarID(txtId As TextBox)
         ' Validar que sea numero, menor a 99
+        Dim id2 = Integer.Parse(txtId.Text)
+        If id2 < 99 And id2 > 0 Then
+
+            SetId(id2)
+
+
+        End If
+
+
 
     End Function
 
