@@ -46,12 +46,12 @@
         Return Me.telefono
     End Function
 
-    Public Function ValidarID(ByVal iD As Integer)
+    Public Function ValidarID()
         ' Validar que sea numero, menor a 99
-        If iD >= 100 Then
-            MsgBox("El numero de ID que ingreso es incorrecto")
+        If Me.id >= 100 Then
+            Return False
         Else
-            Return iD
+            Return True
         End If
 
 
@@ -60,6 +60,16 @@
 
     Public Function ValidaNombre()
         ' Validar que tenga menos de 20 caracteres
+        Dim val As Integer = Me.nombre.Length
+        If val <= 20 Then
+            Return True
+        Else
+            Return False
+
+        End If
+
+
+
 
     End Function
 
