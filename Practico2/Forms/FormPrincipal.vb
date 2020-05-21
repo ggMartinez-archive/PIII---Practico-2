@@ -14,6 +14,10 @@
         p.SetDireccion(txtDireccion.Text)
         p.SetTelefono(txtTelefonos.Text)
 
+        Dim datos As New FormularioDatos
+
+        datos.lblApellido.Text = p.GetApellido
+
 
 
 
