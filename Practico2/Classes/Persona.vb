@@ -46,8 +46,15 @@
         Return Me.telefono
     End Function
 
-    Public Function ValidarID()
+    Public Function ValidarID(ByVal iD As Integer)
         ' Validar que sea numero, menor a 99
+        If iD >= 100 Then
+            MsgBox("El numero de ID que ingreso es incorrecto")
+        Else
+            Return iD
+        End If
+
+
 
     End Function
 
