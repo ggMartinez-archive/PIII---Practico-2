@@ -7,8 +7,27 @@
         ' informacion proveniente de este formulario.
 
         Dim p As New Persona
+        p.SetId(txtId.Text)
+        p.SetNombre(txtNombre.Text)
+        p.SetApellido(txtApellido.Text)
+        p.SetDireccion(txtDireccion.Text)
+        p.SetTelefono(txtTelefonos.Text)
+        validarDatos(p)
+    End Sub
 
+    Private Sub validarDatos(p As Persona)
+        If p.ValidarID(p) And p.ValidaNombre(p) And p.ValidarApellido(p) And p.ValidarDireccion(p) And p.ValidarTelefono(p) Then
+            mostrarDatosFormularioDePersona(p)
+        End If
+    End Sub
 
+    Private Sub mostrarDatosFormularioDePersona(p As Persona)
+        frmFormularioDatos.lblID.Text = p.GetId
+        frmFormularioDatos.lblNombre.Text = p.GetNombre
+        frmFormularioDatos.lblApellido.Text = p.GetApellido
+        frmFormularioDatos.lblDireccion.Text = p.GetDireccion
+        frmFormularioDatos.lblTelefono.Text = p.GetTelefono
+        frmFormularioDatos.ShowDialog()
     End Sub
 
     Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles BtnSalir.Click

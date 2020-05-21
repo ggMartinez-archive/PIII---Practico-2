@@ -48,7 +48,7 @@
 
     Public Function ValidarID(ByVal p As Persona) As Boolean
         ' Validar que sea numero, menor a 99
-        If p.GetId < 9 Then
+        If p.GetId < 99 Then
             Return True
         End If
         Return False
@@ -80,7 +80,7 @@
 
     Public Function ValidarTelefono(ByVal p As Persona) As Boolean
         ' Validar que sea numero, de hasta 9 cifras
-        If p.GetTelefono.ToString.Length <= 9 Then
+        If IsNumeric(p.GetTelefono) And p.GetTelefono.ToString.Length <= 9 Then
             Return True
         End If
         Return False
