@@ -75,16 +75,34 @@
 
     Public Function ValidarApellido()
         ' Validar que tenga menos de 20 caracteres
+        Dim val As Integer = Me.apellido.Length
+        If val <= 20 Then
+            Return True
+        Else
+            Return False
 
+        End If
     End Function
 
     Public Function ValidarDireccion()
         ' Validar que tenga menos de 50 caracteres
+        Dim val As Integer = Me.direccion.Length
+        If val <= 50 Then
+            Return True
+        Else
+            Return False
+        End If
 
     End Function
 
     Public Function ValidarTelefono()
         ' Validar que sea numero, de hasta 9 cifras
+        If Me.telefono <= 99999999 Then
+            Return True
+        Else
+            Return False
+
+        End If
 
     End Function
 End Class
