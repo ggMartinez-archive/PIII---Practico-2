@@ -8,6 +8,9 @@
 
         Dim p As New Persona
 
+        p.SetId(txtId.Text)
+
+
 
     End Sub
 
