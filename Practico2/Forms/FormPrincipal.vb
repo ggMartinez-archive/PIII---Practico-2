@@ -8,6 +8,16 @@
 
         Dim p As New Persona
 
+        p.SetId(txtId.Text)
+        p.SetNombre(txtNombre.Text)
+        p.SetApellido(txtApellido.Text)
+        p.SetDireccion(txtDireccion.Text)
+        p.SetTelefono(txtTelefonos.Text)
+
+
+
+
+
 
     End Sub
 
