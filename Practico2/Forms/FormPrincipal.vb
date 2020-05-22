@@ -7,7 +7,7 @@
         ' informacion proveniente de este formulario.
 
         Dim p As New Persona
-
+        CargarPersona(p)
 
     End Sub
 
@@ -18,4 +18,13 @@
             Application.Exit()
         End If
     End Sub
+
+    Private Sub CargarPersona(p As Persona)
+        p.SetId(txtId.Text)
+        p.SetNombre(txtNombre.Text)
+        p.SetApellido(txtApellido.Text)
+        p.SetDireccion(txtId.Text)
+        p.SetTelefono(txtTelefonos.Text)
+    End Sub
+
 End Class
