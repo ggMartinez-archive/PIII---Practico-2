@@ -48,7 +48,7 @@ Partial Class FormularioDatos
         'lblID
         '
         Me.lblID.AutoSize = True
-        Me.lblID.Location = New System.Drawing.Point(12, 44)
+        Me.lblID.Location = New System.Drawing.Point(12, 41)
         Me.lblID.Name = "lblID"
         Me.lblID.Size = New System.Drawing.Size(18, 13)
         Me.lblID.TabIndex = 9
@@ -56,15 +56,15 @@ Partial Class FormularioDatos
         '
         'txtId_Recibido
         '
-        Me.txtId_Recibido.Location = New System.Drawing.Point(12, 60)
+        Me.txtId_Recibido.Location = New System.Drawing.Point(12, 57)
         Me.txtId_Recibido.Name = "txtId_Recibido"
-        Me.txtId_Recibido.Size = New System.Drawing.Size(100, 20)
+        Me.txtId_Recibido.Size = New System.Drawing.Size(220, 20)
         Me.txtId_Recibido.TabIndex = 10
         '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Location = New System.Drawing.Point(131, 44)
+        Me.lblNombre.Location = New System.Drawing.Point(12, 80)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(44, 13)
         Me.lblNombre.TabIndex = 11
@@ -72,15 +72,15 @@ Partial Class FormularioDatos
         '
         'txtNombre_Recibido
         '
-        Me.txtNombre_Recibido.Location = New System.Drawing.Point(132, 60)
+        Me.txtNombre_Recibido.Location = New System.Drawing.Point(15, 96)
         Me.txtNombre_Recibido.Name = "txtNombre_Recibido"
-        Me.txtNombre_Recibido.Size = New System.Drawing.Size(100, 20)
+        Me.txtNombre_Recibido.Size = New System.Drawing.Size(217, 20)
         Me.txtNombre_Recibido.TabIndex = 12
         '
         'lblApellido
         '
         Me.lblApellido.AutoSize = True
-        Me.lblApellido.Location = New System.Drawing.Point(131, 83)
+        Me.lblApellido.Location = New System.Drawing.Point(12, 119)
         Me.lblApellido.Name = "lblApellido"
         Me.lblApellido.Size = New System.Drawing.Size(44, 13)
         Me.lblApellido.TabIndex = 13
@@ -88,15 +88,15 @@ Partial Class FormularioDatos
         '
         'txtApellido_Recibido
         '
-        Me.txtApellido_Recibido.Location = New System.Drawing.Point(132, 99)
+        Me.txtApellido_Recibido.Location = New System.Drawing.Point(15, 135)
         Me.txtApellido_Recibido.Name = "txtApellido_Recibido"
-        Me.txtApellido_Recibido.Size = New System.Drawing.Size(100, 20)
+        Me.txtApellido_Recibido.Size = New System.Drawing.Size(217, 20)
         Me.txtApellido_Recibido.TabIndex = 14
         '
         'lblTelefono
         '
         Me.lblTelefono.AutoSize = True
-        Me.lblTelefono.Location = New System.Drawing.Point(12, 83)
+        Me.lblTelefono.Location = New System.Drawing.Point(12, 158)
         Me.lblTelefono.Name = "lblTelefono"
         Me.lblTelefono.Size = New System.Drawing.Size(52, 13)
         Me.lblTelefono.TabIndex = 15
@@ -104,15 +104,15 @@ Partial Class FormularioDatos
         '
         'txtDireccion_Recibido
         '
-        Me.txtDireccion_Recibido.Location = New System.Drawing.Point(12, 99)
+        Me.txtDireccion_Recibido.Location = New System.Drawing.Point(15, 174)
         Me.txtDireccion_Recibido.Name = "txtDireccion_Recibido"
-        Me.txtDireccion_Recibido.Size = New System.Drawing.Size(100, 20)
+        Me.txtDireccion_Recibido.Size = New System.Drawing.Size(217, 20)
         Me.txtDireccion_Recibido.TabIndex = 16
         '
         'lblDireccion
         '
         Me.lblDireccion.AutoSize = True
-        Me.lblDireccion.Location = New System.Drawing.Point(12, 122)
+        Me.lblDireccion.Location = New System.Drawing.Point(12, 197)
         Me.lblDireccion.Name = "lblDireccion"
         Me.lblDireccion.Size = New System.Drawing.Size(49, 13)
         Me.lblDireccion.TabIndex = 17
@@ -120,17 +120,17 @@ Partial Class FormularioDatos
         '
         'txtTelefonos_Recibido
         '
-        Me.txtTelefonos_Recibido.Location = New System.Drawing.Point(12, 138)
+        Me.txtTelefonos_Recibido.Location = New System.Drawing.Point(15, 213)
         Me.txtTelefonos_Recibido.Multiline = True
         Me.txtTelefonos_Recibido.Name = "txtTelefonos_Recibido"
-        Me.txtTelefonos_Recibido.Size = New System.Drawing.Size(220, 23)
+        Me.txtTelefonos_Recibido.Size = New System.Drawing.Size(217, 21)
         Me.txtTelefonos_Recibido.TabIndex = 18
         '
         'BtnSalir
         '
         Me.BtnSalir.BackColor = System.Drawing.Color.Red
         Me.BtnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnSalir.Location = New System.Drawing.Point(75, 206)
+        Me.BtnSalir.Location = New System.Drawing.Point(73, 264)
         Me.BtnSalir.Name = "BtnSalir"
         Me.BtnSalir.Size = New System.Drawing.Size(100, 23)
         Me.BtnSalir.TabIndex = 19

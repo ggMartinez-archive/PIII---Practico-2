@@ -68,7 +68,7 @@
     Public Function ValidaNombre(nombre As String)
         ' Validar que tenga menos de 20 caracteres
         Dim result As Boolean
-        If nombre.Trim.Length < 20 Then
+        If nombre.Trim.Length <= 20 Then
             result = True
         Else
             result = False
@@ -82,7 +82,7 @@
     Public Function ValidarApellido(apellido As String)
         ' Validar que tenga menos de 20 caracteres
         Dim result As Boolean
-        If apellido.Trim.Length < 20 Then
+        If apellido.Trim.Length <= 20 Then
             result = True
         Else
             result = False
@@ -96,7 +96,7 @@
     Public Function ValidarDireccion(direccion As String)
         ' Validar que tenga menos de 50 caracteres
         Dim result As Boolean
-        If direccion.Trim.Length < 50 Then
+        If direccion.Trim.Length <= 50 Then
             result = True
         Else
             result = False
