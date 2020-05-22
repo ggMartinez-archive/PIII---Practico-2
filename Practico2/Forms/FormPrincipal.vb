@@ -12,12 +12,14 @@
             If p.ValidaNombre Then
                 If p.ValidarApellido Then
                     If p.ValidarDireccion Then
-                        If p.ValidarTelefono Then
+                        'If p.ValidarTelefono Then
 
+                        FrmDatos.Show()
+                        Me.Hide()
 
-                        Else
-                            MsgBox("Error en el Telefono")
-                        End If
+                        'Else
+                        'MsgBox("Error en el Telefono")
+                        'End If
                     Else
                         MsgBox("Error en la Direccion")
                     End If
