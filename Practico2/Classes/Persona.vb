@@ -18,7 +18,7 @@
         Me.apellido = apellidoRecibido
     End Sub
 
-    Public Sub SetTelefono(telefonoRecibido As String))
+    Public Sub SetTelefono(telefonoRecibido As String)
         Me.telefono = telefonoRecibido
     End Sub
 
@@ -46,28 +46,82 @@
         Return Me.telefono
     End Function
 
-    Public Function ValidarID()
+    Public Function ValidarID(id As String)
         ' Validar que sea numero, menor a 99
 
+        Dim result As Boolean
+        Dim id2 As Integer
+        If Integer.TryParse(id, id2) AndAlso id2 > 0 AndAlso id2 < 100 Then
+
+            result = True
+
+        Else
+            result = False
+        End If
+
+        ValidarID = result
+
+
+
     End Function
 
-    Public Function ValidaNombre()
+    Public Function ValidaNombre(nombre As String)
         ' Validar que tenga menos de 20 caracteres
+        Dim result As Boolean
+        If nombre.Trim.Length <= 20 Then
+            result = True
+        Else
+            result = False
+
+        End If
+
+        ValidaNombre = result
 
     End Function
 
-    Public Function ValidarApellido()
+    Public Function ValidarApellido(apellido As String)
         ' Validar que tenga menos de 20 caracteres
+        Dim result As Boolean
+        If apellido.Trim.Length <= 20 Then
+            result = True
+        Else
+            result = False
+
+        End If
+
+        ValidarApellido = result
 
     End Function
 
-    Public Function ValidarDireccion()
+    Public Function ValidarDireccion(direccion As String)
         ' Validar que tenga menos de 50 caracteres
+        Dim result As Boolean
+        If direccion.Trim.Length <= 50 Then
+            result = True
+        Else
+            result = False
+
+        End If
+
+        ValidarDireccion = result
 
     End Function
 
-    Public Function ValidarTelefono()
+    Public Function ValidarTelefono(telefono As String)
         ' Validar que sea numero, de hasta 9 cifras
+        Dim result As Boolean
+
+        Dim telefono2 As Integer
+        If Integer.TryParse(telefono, telefono2) Then
+            If telefono.Trim.Length > 8 And telefono.Trim.Length < 10 Then
+                result = True
+            Else
+                result = False
+            End If
+
+        End If
+
+        ValidarTelefono = result
 
     End Function
 End Class
