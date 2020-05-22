@@ -32,7 +32,7 @@ Partial Class FormularioDatos
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Location = New System.Drawing.Point(352, 137)
+        Me.lblNombre.Location = New System.Drawing.Point(115, 83)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(39, 13)
         Me.lblNombre.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class FormularioDatos
         'lblTelefono
         '
         Me.lblTelefono.AutoSize = True
-        Me.lblTelefono.Location = New System.Drawing.Point(352, 215)
+        Me.lblTelefono.Location = New System.Drawing.Point(115, 167)
         Me.lblTelefono.Name = "lblTelefono"
         Me.lblTelefono.Size = New System.Drawing.Size(39, 13)
         Me.lblTelefono.TabIndex = 1
@@ -50,7 +50,7 @@ Partial Class FormularioDatos
         'lblDireccion
         '
         Me.lblDireccion.AutoSize = True
-        Me.lblDireccion.Location = New System.Drawing.Point(352, 188)
+        Me.lblDireccion.Location = New System.Drawing.Point(115, 142)
         Me.lblDireccion.Name = "lblDireccion"
         Me.lblDireccion.Size = New System.Drawing.Size(39, 13)
         Me.lblDireccion.TabIndex = 2
@@ -59,7 +59,7 @@ Partial Class FormularioDatos
         'lblApellido
         '
         Me.lblApellido.AutoSize = True
-        Me.lblApellido.Location = New System.Drawing.Point(352, 163)
+        Me.lblApellido.Location = New System.Drawing.Point(115, 110)
         Me.lblApellido.Name = "lblApellido"
         Me.lblApellido.Size = New System.Drawing.Size(39, 13)
         Me.lblApellido.TabIndex = 3
@@ -68,7 +68,7 @@ Partial Class FormularioDatos
         'lblID
         '
         Me.lblID.AutoSize = True
-        Me.lblID.Location = New System.Drawing.Point(352, 113)
+        Me.lblID.Location = New System.Drawing.Point(115, 51)
         Me.lblID.Name = "lblID"
         Me.lblID.Size = New System.Drawing.Size(39, 13)
         Me.lblID.TabIndex = 4
@@ -78,7 +78,7 @@ Partial Class FormularioDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(525, 302)
+        Me.ClientSize = New System.Drawing.Size(212, 233)
         Me.Controls.Add(Me.lblID)
         Me.Controls.Add(Me.lblApellido)
         Me.Controls.Add(Me.lblDireccion)

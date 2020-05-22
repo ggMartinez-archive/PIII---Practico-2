@@ -48,6 +48,8 @@
         End If
 
 
+        datos.Show()
+
 
 
 
