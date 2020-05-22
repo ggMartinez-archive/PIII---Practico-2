@@ -48,4 +48,7 @@
         p.SetTelefono(txtTelefonos.Text)
     End Sub
 
+    Private Sub FrmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
