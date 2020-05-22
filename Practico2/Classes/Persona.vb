@@ -18,7 +18,7 @@
         Me.apellido = apellidoRecibido
     End Sub
 
-    Public Sub SetTelefono(telefonoRecibido As String))
+    Public Sub SetTelefono(telefonoRecibido As String)
         Me.telefono = telefonoRecibido
     End Sub
 
@@ -80,7 +80,7 @@
 
     Public Function ValidarTelefono(telefono As String) As Boolean
         ' Validar que sea numero, de hasta 9 cifras
-        If IsNumeric(telefono) And telefono.Length > 9 Then
+        If IsNumeric(telefono) And telefono.Length <= 9 Then
             Return True
         End If
         Return False
