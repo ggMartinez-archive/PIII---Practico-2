@@ -18,7 +18,7 @@
         Me.apellido = apellidoRecibido
     End Sub
 
-    Public Sub SetTelefono(telefonoRecibido As String))
+    Public Sub SetTelefono(telefonoRecibido As String)
         Me.telefono = telefonoRecibido
     End Sub
 
@@ -46,28 +46,43 @@
         Return Me.telefono
     End Function
 
-    Public Function ValidarID()
+    Public Function ValidarID(id As Integer) As Boolean
         ' Validar que sea numero, menor a 99
-
+        If id < 99 Then
+            Return True
+        End If
+        Return False
     End Function
 
-    Public Function ValidaNombre()
+    Public Function ValidaNombre(nombre As String) As Boolean
         ' Validar que tenga menos de 20 caracteres
-
+        If nombre.Length < 20 Then
+            Return True
+        End If
+        Return False
     End Function
 
-    Public Function ValidarApellido()
+    Public Function ValidarApellido(apellido As String) As Boolean
         ' Validar que tenga menos de 20 caracteres
-
+        If apellido.Length < 20 Then
+            Return True
+        End If
+        Return False
     End Function
 
-    Public Function ValidarDireccion()
+    Public Function ValidarDireccion(direccion As String) As Boolean
         ' Validar que tenga menos de 50 caracteres
-
+        If direccion.Length < 50 Then
+            Return True
+        End If
+        Return False
     End Function
 
-    Public Function ValidarTelefono()
+    Public Function ValidarTelefono(telefono As String) As Boolean
         ' Validar que sea numero, de hasta 9 cifras
-
+        If IsNumeric(telefono) And telefono.Length <= 9 Then
+            Return True
+        End If
+        Return False
     End Function
 End Class
