@@ -7,6 +7,46 @@
         ' informacion proveniente de este formulario.
 
         Dim p As New Persona
+        Dim f As New FormularioDatos
+
+        Dim comprueba As Integer
+
+        'Validacion Id
+        If p.ValidarID(txtId.Text) = True Then
+            comprueba += 1
+        End If
+
+        'Validacion Nombre
+        If p.ValidaNombre(txtNombre.Text) = True Then
+            comprueba += 1
+        End If
+
+        'Validacion Apellido
+        If p.ValidarApellido(txtApellido.Text) = True Then
+            comprueba += 1
+        End If
+
+        'Validacion Direccion
+        If p.ValidarDireccion(txtDireccion.Text) = True Then
+            comprueba += 1
+        End If
+
+        'Validacion Telefono
+        If p.ValidarTelefono(txtTelefonos.Text) = True Then
+            comprueba += 1
+        End If
+
+        If comprueba = 5 Then
+
+            f.LabelId.Text = txtId.Text
+            f.LabelNombre.Text = txtNombre.Text
+            f.LabelApellido.Text = txtApellido.Text
+            f.LabelDireccion.Text = txtDireccion.Text
+            f.LabelTelefono.Text = txtTelefonos.Text
+
+            f.Show()
+
+        End If
 
 
     End Sub
@@ -18,4 +58,6 @@
             Application.Exit()
         End If
     End Sub
+
+
 End Class
