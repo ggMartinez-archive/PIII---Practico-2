@@ -14,9 +14,44 @@
         p.SetDireccion(txtDireccion.Text)
         p.SetTelefono(txtTelefonos.Text)
 
+
+
         Dim datos As New FormularioDatos
 
-        datos.lblApellido.Text = p.GetApellido
+        Dim nombre As String = p.GetNombre()
+        Dim apellido As String = p.GetApellido()
+        Dim telefono As String = p.GetTelefono()
+        Dim direccion As String = p.GetDireccion()
+
+        Dim id As Integer = p.GetId()
+
+
+
+        If p.ValidaNombre(nombre) = True Then
+            datos.lblNombre.Text = p.GetNombre()
+        End If
+
+        If p.ValidarApellido(apellido) = True Then
+            datos.lblApellido.Text = p.GetApellido()
+        End If
+
+        If p.ValidarID(id) = True Then
+            datos.lblID.Text = p.GetId()
+        End If
+
+        If p.ValidarDireccion(direccion) = True Then
+            datos.lblDireccion.Text = p.GetDireccion()
+        End If
+
+        If p.ValidarTelefono(telefono) = True Then
+            datos.lblTelefono.Text = p.GetTelefono()
+        End If
+
+
+
+
+
+
 
 
 
