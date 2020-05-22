@@ -107,6 +107,9 @@
     <EmbeddedResource Include="Forms\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormularioDatos.resx">
+      <DependentUpon>FormularioDatos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
