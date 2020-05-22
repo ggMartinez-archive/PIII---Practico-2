@@ -8,7 +8,28 @@
 
         Dim p As New Persona
         CargarPersona(p)
+        If p.ValidarID Then
+            If p.ValidaNombre Then
+                If p.ValidarApellido Then
+                    If p.ValidarDireccion Then
+                        If p.ValidarTelefono Then
 
+
+                        Else
+                            MsgBox("Error en el Telefono")
+                        End If
+                    Else
+                        MsgBox("Error en la Direccion")
+                    End If
+                Else
+                    MsgBox("Error en el Apellido")
+                End If
+            Else
+                MsgBox("Error en el Nombre")
+            End If
+        Else
+            MsgBox("Error en el ID")
+        End If
     End Sub
 
     Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles BtnSalir.Click
