@@ -5,9 +5,12 @@
         ' formulario en sus atributos, y ejecutando los metodos de validacion.
         ' Una vez validado el formulario, se debe mostrar FormularioDatos con la
         ' informacion proveniente de este formulario.
-
+        
         Dim p As New Persona
+        p.SetId(txtId.Text)
+        p.SetNombre(txtNombre.Text)
 
+        FormularioDatos.Show()
 
     End Sub
 
@@ -17,5 +20,9 @@
         If MsgBox("Desea Salir?", MsgBoxStyle.YesNo) = YES Then
             Application.Exit()
         End If
+    End Sub
+
+    Private Sub FrmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
