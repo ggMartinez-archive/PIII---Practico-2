@@ -46,36 +46,68 @@
         Return Me.telefono
     End Function
 
-    Public Function ValidarID(txtId As TextBox)
+    Public Function ValidarID(id As String)
         ' Validar que sea numero, menor a 99
-        Dim id2 = Integer.Parse(txtId.Text)
-        If id2 < 99 And id2 > 0 Then
 
-            SetId(id2)
+        Dim result As Boolean
+        Dim id2 As Integer
+        If Integer.TryParse(id, id2) AndAlso id2 > 0 AndAlso id2 < 100 Then
 
+            result = True
+
+        Else
+            result = False
+        End If
+
+        ValidarID = result
+
+
+
+    End Function
+
+    Public Function ValidaNombre(nombre As String)
+        ' Validar que tenga menos de 20 caracteres
+        Dim result As Boolean
+        If nombre.Trim.Length < 20 Then
+            result = True
+        Else
+            result = False
 
         End If
 
-
+        ValidaNombre = result
 
     End Function
 
-    Public Function ValidaNombre()
+    Public Function ValidarApellido(apellido As String)
         ' Validar que tenga menos de 20 caracteres
+        Dim result As Boolean
+        If apellido.Trim.Length < 20 Then
+            result = True
+        Else
+            result = False
+
+        End If
+
+        ValidarApellido = result
 
     End Function
 
-    Public Function ValidarApellido()
-        ' Validar que tenga menos de 20 caracteres
-
-    End Function
-
-    Public Function ValidarDireccion()
+    Public Function ValidarDireccion(direccion As String)
         ' Validar que tenga menos de 50 caracteres
+        Dim result As Boolean
+        If direccion.Trim.Length < 50 Then
+            result = True
+        Else
+            result = False
+
+        End If
+
+        ValidarDireccion = result
 
     End Function
 
-    Public Function ValidarTelefono()
+    Public Function ValidarTelefono(telefono As String)
         ' Validar que sea numero, de hasta 9 cifras
 
     End Function

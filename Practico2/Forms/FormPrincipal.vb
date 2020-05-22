@@ -1,9 +1,5 @@
 ﻿Public Class FrmPrincipal
-    Private Id As String
-    Private nombre As String
-    Private apellido As String
-    Private telefono As String
-    Private direccion As String
+
     Private Sub BtnEnviar_Click(sender As Object, e As EventArgs) Handles BtnEnviar.Click
         ' En este metodo se debe realizar la validacion de los datos del formulario.
         ' Se debe trabajar con la instancia "p" de Persona, cargando los datos del 
@@ -13,25 +9,46 @@
 
         Dim p As New Persona
 
-
-        Id = txtId.Text
-        nombre = txtNombre.Text
-        apellido = txtApellido.Text
-        telefono = txtTelefonos.Text
-        direccion = txtDireccion.Text
-
-
-
-        ' p.SetId(Id)
-        'p.SetNombre(nombre)
-        'p.SetApellido(apellido)
-        'p.SetTelefono(telefono)
-        'p.SetDireccion(direccion)
-
-        p.ValidarID(txtId)
+        Dim Id As String = txtId.Text
+        Dim nombre As String = txtNombre.Text
+        Dim apellido As String = txtApellido.Text
+        Dim telefonos As String = txtTelefonos.Text
+        Dim direccion As String = txtDireccion.Text
 
 
 
+        If p.ValidarID(Id) = True Then
+            p.SetId(Id)
+        Else
+            MessageBox.Show("Dato incorrecto!", "Id, debe ser numero y no estar vacio",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
+
+        If p.ValidaNombre(nombre) = True Then
+            p.SetNombre(nombre)
+        Else
+            MessageBox.Show("Dato incorrecto!", "Nombre, debe contener menos de 20 caracteres",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
+
+        If p.ValidarApellido(apellido) = True Then
+            p.SetApellido(apellido)
+        Else
+            MessageBox.Show("Dato incorrecto!", "Apellido, debe contener menos de 20 caracteres",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
+
+
+        If p.ValidarDireccion(direccion) = True Then
+            p.SetDireccion(direccion)
+        Else
+            MessageBox.Show("Dato incorrecto!", "Direccion, debe contener menos de 50 caracteres",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
 
 
 
