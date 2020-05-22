@@ -109,6 +109,19 @@
 
     Public Function ValidarTelefono(telefono As String)
         ' Validar que sea numero, de hasta 9 cifras
+        Dim result As Boolean
+
+        Dim telefono2 As Integer
+        If Integer.TryParse(telefono, telefono2) Then
+            If telefono.Trim.Length < 10 Then
+                result = True
+            Else
+                result = False
+            End If
+
+        End If
+
+        ValidarTelefono = result
 
     End Function
 End Class
