@@ -18,7 +18,7 @@
         Me.apellido = apellidoRecibido
     End Sub
 
-    Public Sub SetTelefono(telefonoRecibido As String))
+    Public Sub SetTelefono(telefonoRecibido As String)
         Me.telefono = telefonoRecibido
     End Sub
 
