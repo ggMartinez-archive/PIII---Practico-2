@@ -50,6 +50,13 @@
 
         End If
 
+        If p.ValidarTelefono(telefonos) = True Then
+            p.SetTelefono(telefonos)
+        Else
+            MessageBox.Show("Dato incorrecto!", "Telefono, debe contener 9 caracteres",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
 
 
 

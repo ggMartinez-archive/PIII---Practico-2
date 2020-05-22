@@ -112,7 +112,7 @@
         Dim result As Boolean
 
         Dim telefono2 As Integer
-        If Integer.TryParse(telefono, telefono2) Then
+        If Integer.TryParse(telefono, telefono2) AndAlso telefono > 8 AndAlso telefono < 10 Then
             If telefono.Trim.Length < 10 Then
                 result = True
             Else
