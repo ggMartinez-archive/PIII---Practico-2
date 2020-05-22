@@ -14,4 +14,9 @@
     Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles BtnSalir.Click
 
     End Sub
+
+    Private Sub txtId_Recibido_TextChanged(sender As Object, e As EventArgs) Handles txtId_Recibido.TextChanged
+
+
+    End Sub
 End Class

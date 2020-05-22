@@ -32,7 +32,7 @@ Partial Class FormularioDatos
         Me.lblTelefono = New System.Windows.Forms.Label()
         Me.txtDireccion_Recibido = New System.Windows.Forms.TextBox()
         Me.lblDireccion = New System.Windows.Forms.Label()
-        Me.txtTelefonos = New System.Windows.Forms.TextBox()
+        Me.txtTelefonos_Recibido = New System.Windows.Forms.TextBox()
         Me.BtnSalir = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -118,13 +118,13 @@ Partial Class FormularioDatos
         Me.lblDireccion.TabIndex = 17
         Me.lblDireccion.Text = "Telefono"
         '
-        'txtTelefonos
+        'txtTelefonos_Recibido
         '
-        Me.txtTelefonos.Location = New System.Drawing.Point(12, 138)
-        Me.txtTelefonos.Multiline = True
-        Me.txtTelefonos.Name = "txtTelefonos"
-        Me.txtTelefonos.Size = New System.Drawing.Size(220, 23)
-        Me.txtTelefonos.TabIndex = 18
+        Me.txtTelefonos_Recibido.Location = New System.Drawing.Point(12, 138)
+        Me.txtTelefonos_Recibido.Multiline = True
+        Me.txtTelefonos_Recibido.Name = "txtTelefonos_Recibido"
+        Me.txtTelefonos_Recibido.Size = New System.Drawing.Size(220, 23)
+        Me.txtTelefonos_Recibido.TabIndex = 18
         '
         'BtnSalir
         '
@@ -144,7 +144,7 @@ Partial Class FormularioDatos
         Me.BackColor = System.Drawing.SystemColors.Info
         Me.ClientSize = New System.Drawing.Size(244, 299)
         Me.Controls.Add(Me.BtnSalir)
-        Me.Controls.Add(Me.txtTelefonos)
+        Me.Controls.Add(Me.txtTelefonos_Recibido)
         Me.Controls.Add(Me.lblDireccion)
         Me.Controls.Add(Me.txtDireccion_Recibido)
         Me.Controls.Add(Me.lblTelefono)
@@ -172,6 +172,6 @@ Partial Class FormularioDatos
     Friend WithEvents lblTelefono As Label
     Friend WithEvents txtDireccion_Recibido As TextBox
     Friend WithEvents lblDireccion As Label
-    Friend WithEvents txtTelefonos As TextBox
+    Friend WithEvents txtTelefonos_Recibido As TextBox
     Friend WithEvents BtnSalir As Button
 End Class
