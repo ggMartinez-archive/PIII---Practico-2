@@ -24,7 +24,16 @@ Partial Class FormularioDatos
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblID = New System.Windows.Forms.Label()
-        Me.txtId = New System.Windows.Forms.TextBox()
+        Me.txtId_Recibido = New System.Windows.Forms.TextBox()
+        Me.lblNombre = New System.Windows.Forms.Label()
+        Me.txtNombre_Recibido = New System.Windows.Forms.TextBox()
+        Me.lblApellido = New System.Windows.Forms.Label()
+        Me.txtApellido_Recibido = New System.Windows.Forms.TextBox()
+        Me.lblTelefono = New System.Windows.Forms.Label()
+        Me.txtDireccion_Recibido = New System.Windows.Forms.TextBox()
+        Me.lblDireccion = New System.Windows.Forms.Label()
+        Me.txtTelefonos = New System.Windows.Forms.TextBox()
+        Me.BtnSalir = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -39,18 +48,94 @@ Partial Class FormularioDatos
         'lblID
         '
         Me.lblID.AutoSize = True
-        Me.lblID.Location = New System.Drawing.Point(24, 44)
+        Me.lblID.Location = New System.Drawing.Point(12, 44)
         Me.lblID.Name = "lblID"
         Me.lblID.Size = New System.Drawing.Size(18, 13)
         Me.lblID.TabIndex = 9
         Me.lblID.Text = "ID"
         '
-        'txtId
+        'txtId_Recibido
         '
-        Me.txtId.Location = New System.Drawing.Point(75, 41)
-        Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(100, 20)
-        Me.txtId.TabIndex = 10
+        Me.txtId_Recibido.Location = New System.Drawing.Point(12, 60)
+        Me.txtId_Recibido.Name = "txtId_Recibido"
+        Me.txtId_Recibido.Size = New System.Drawing.Size(100, 20)
+        Me.txtId_Recibido.TabIndex = 10
+        '
+        'lblNombre
+        '
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Location = New System.Drawing.Point(131, 44)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(44, 13)
+        Me.lblNombre.TabIndex = 11
+        Me.lblNombre.Text = "Nombre"
+        '
+        'txtNombre_Recibido
+        '
+        Me.txtNombre_Recibido.Location = New System.Drawing.Point(132, 60)
+        Me.txtNombre_Recibido.Name = "txtNombre_Recibido"
+        Me.txtNombre_Recibido.Size = New System.Drawing.Size(100, 20)
+        Me.txtNombre_Recibido.TabIndex = 12
+        '
+        'lblApellido
+        '
+        Me.lblApellido.AutoSize = True
+        Me.lblApellido.Location = New System.Drawing.Point(131, 83)
+        Me.lblApellido.Name = "lblApellido"
+        Me.lblApellido.Size = New System.Drawing.Size(44, 13)
+        Me.lblApellido.TabIndex = 13
+        Me.lblApellido.Text = "Apellido"
+        '
+        'txtApellido_Recibido
+        '
+        Me.txtApellido_Recibido.Location = New System.Drawing.Point(132, 99)
+        Me.txtApellido_Recibido.Name = "txtApellido_Recibido"
+        Me.txtApellido_Recibido.Size = New System.Drawing.Size(100, 20)
+        Me.txtApellido_Recibido.TabIndex = 14
+        '
+        'lblTelefono
+        '
+        Me.lblTelefono.AutoSize = True
+        Me.lblTelefono.Location = New System.Drawing.Point(12, 83)
+        Me.lblTelefono.Name = "lblTelefono"
+        Me.lblTelefono.Size = New System.Drawing.Size(52, 13)
+        Me.lblTelefono.TabIndex = 15
+        Me.lblTelefono.Text = "Direccion"
+        '
+        'txtDireccion_Recibido
+        '
+        Me.txtDireccion_Recibido.Location = New System.Drawing.Point(12, 99)
+        Me.txtDireccion_Recibido.Name = "txtDireccion_Recibido"
+        Me.txtDireccion_Recibido.Size = New System.Drawing.Size(100, 20)
+        Me.txtDireccion_Recibido.TabIndex = 16
+        '
+        'lblDireccion
+        '
+        Me.lblDireccion.AutoSize = True
+        Me.lblDireccion.Location = New System.Drawing.Point(12, 122)
+        Me.lblDireccion.Name = "lblDireccion"
+        Me.lblDireccion.Size = New System.Drawing.Size(49, 13)
+        Me.lblDireccion.TabIndex = 17
+        Me.lblDireccion.Text = "Telefono"
+        '
+        'txtTelefonos
+        '
+        Me.txtTelefonos.Location = New System.Drawing.Point(12, 138)
+        Me.txtTelefonos.Multiline = True
+        Me.txtTelefonos.Name = "txtTelefonos"
+        Me.txtTelefonos.Size = New System.Drawing.Size(220, 23)
+        Me.txtTelefonos.TabIndex = 18
+        '
+        'BtnSalir
+        '
+        Me.BtnSalir.BackColor = System.Drawing.Color.Red
+        Me.BtnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnSalir.Location = New System.Drawing.Point(75, 206)
+        Me.BtnSalir.Name = "BtnSalir"
+        Me.BtnSalir.Size = New System.Drawing.Size(100, 23)
+        Me.BtnSalir.TabIndex = 19
+        Me.BtnSalir.Text = "Salir"
+        Me.BtnSalir.UseVisualStyleBackColor = False
         '
         'FormularioDatos
         '
@@ -58,7 +143,16 @@ Partial Class FormularioDatos
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Info
         Me.ClientSize = New System.Drawing.Size(244, 299)
-        Me.Controls.Add(Me.txtId)
+        Me.Controls.Add(Me.BtnSalir)
+        Me.Controls.Add(Me.txtTelefonos)
+        Me.Controls.Add(Me.lblDireccion)
+        Me.Controls.Add(Me.txtDireccion_Recibido)
+        Me.Controls.Add(Me.lblTelefono)
+        Me.Controls.Add(Me.txtApellido_Recibido)
+        Me.Controls.Add(Me.lblApellido)
+        Me.Controls.Add(Me.txtNombre_Recibido)
+        Me.Controls.Add(Me.lblNombre)
+        Me.Controls.Add(Me.txtId_Recibido)
         Me.Controls.Add(Me.lblID)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormularioDatos"
@@ -70,5 +164,14 @@ Partial Class FormularioDatos
 
     Friend WithEvents Label1 As Label
     Friend WithEvents lblID As Label
-    Friend WithEvents txtId As TextBox
+    Friend WithEvents txtId_Recibido As TextBox
+    Friend WithEvents lblNombre As Label
+    Friend WithEvents txtNombre_Recibido As TextBox
+    Friend WithEvents lblApellido As Label
+    Friend WithEvents txtApellido_Recibido As TextBox
+    Friend WithEvents lblTelefono As Label
+    Friend WithEvents txtDireccion_Recibido As TextBox
+    Friend WithEvents lblDireccion As Label
+    Friend WithEvents txtTelefonos As TextBox
+    Friend WithEvents BtnSalir As Button
 End Class
