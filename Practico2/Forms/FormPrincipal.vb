@@ -7,7 +7,41 @@
         ' informacion proveniente de este formulario.
 
         Dim p As New Persona
+        Dim formulario As New FormularioDatos
 
+        Dim valid As Integer
+
+        If p.ValidarID(txtId.Text) = True Then
+            valid += 1
+        End If
+
+        If p.ValidaNombre(txtNombre.Text) = True Then
+            valid += 1
+        End If
+
+        If p.ValidarApellido(txtApellido.Text) = True Then
+            valid += 1
+        End If
+
+        If p.ValidarDireccion(txtDireccion.Text) = True Then
+            valid += 1
+        End If
+
+        If p.ValidarTelefono(txtTelefonos.Text) = True Then
+            valid += 1
+        End If
+
+        If valid = 5 Then
+
+            formulario.lbl_id.Text = txtId.Text
+            formulario.lbl_nom.Text = txtNombre.Text
+            formulario.lbl_ape.Text = txtApellido.Text
+            formulario.lbl_dir.Text = txtDireccion.Text
+            formulario.lbl_tel.Text = txtTelefonos.Text
+
+            formulario.Show()
+
+        End If
 
     End Sub
 
@@ -18,4 +52,5 @@
             Application.Exit()
         End If
     End Sub
+
 End Class
