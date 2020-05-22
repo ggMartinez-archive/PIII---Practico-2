@@ -18,57 +18,68 @@
         Dim direccion As String = txtDireccion.Text
 
 
+        If Id <> "" And nombre <> "" And apellido <> "" And telefonos <> "" And direccion <> "" Then
+            If p.ValidarID(Id) = True Then
+                p.SetId(Id)
+                FormularioDatosVentana.txtId_Recibido.Text = txtId.Text
 
-        If p.ValidarID(Id) = True Then
-            p.SetId(Id)
-            FormularioDatosVentana.txtId_Recibido.Text = txtId.Text
+            Else
+                MessageBox.Show("Dato incorrecto!", "Id, debe ser numero y no estar vacio",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
+
+            If p.ValidaNombre(nombre) = True Then
+                p.SetNombre(nombre)
+                FormularioDatosVentana.txtNombre_Recibido.Text = txtNombre.Text
+            Else
+                MessageBox.Show("Dato incorrecto!", "Nombre, debe contener menos de 20 caracteres",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
+
+            If p.ValidarApellido(apellido) = True Then
+                p.SetApellido(apellido)
+                FormularioDatosVentana.txtApellido_Recibido.Text = txtApellido.Text
+            Else
+                MessageBox.Show("Dato incorrecto!", "Apellido, debe contener menos de 20 caracteres",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
+
+
+            If p.ValidarDireccion(direccion) = True Then
+                p.SetDireccion(direccion)
+                FormularioDatosVentana.txtDireccion_Recibido.Text = txtDireccion.Text
+            Else
+                MessageBox.Show("Dato incorrecto!", "Direccion, debe contener menos de 50 caracteres",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
+
+            If p.ValidarTelefono(telefonos) = True Then
+                p.SetTelefono(telefonos)
+                FormularioDatosVentana.txtTelefonos_Recibido.Text = txtTelefonos.Text
+            Else
+                MessageBox.Show("Dato incorrecto!", "Telefono, debe contener 9 caracteres",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
+
+            FormularioDatosVentana.Show()
 
         Else
-            MessageBox.Show("Dato incorrecto!", "Id, debe ser numero y no estar vacio",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Campos Vacios!", "Por Favor, debe rellenar los campos",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error)
+            txtId.Text = ""
+            txtNombre.Text = ""
+            txtApellido.Text = ""
+            txtDireccion.Text = ""
+            txtTelefonos.Text = ""
 
         End If
 
-        If p.ValidaNombre(nombre) = True Then
-            p.SetNombre(nombre)
-            FormularioDatosVentana.txtNombre_Recibido.Text = txtNombre.Text
-        Else
-            MessageBox.Show("Dato incorrecto!", "Nombre, debe contener menos de 20 caracteres",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-        End If
-
-        If p.ValidarApellido(apellido) = True Then
-            p.SetApellido(apellido)
-            FormularioDatosVentana.txtApellido_Recibido.Text = txtApellido.Text
-        Else
-            MessageBox.Show("Dato incorrecto!", "Apellido, debe contener menos de 20 caracteres",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error)
-
-        End If
-
-
-        If p.ValidarDireccion(direccion) = True Then
-            p.SetDireccion(direccion)
-            FormularioDatosVentana.txtDireccion_Recibido.Text = txtDireccion.Text
-        Else
-            MessageBox.Show("Dato incorrecto!", "Direccion, debe contener menos de 50 caracteres",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error)
-
-        End If
-
-        If p.ValidarTelefono(telefonos) = True Then
-            p.SetTelefono(telefonos)
-            FormularioDatosVentana.txtTelefonos_Recibido.Text = txtTelefonos.Text
-        Else
-            MessageBox.Show("Dato incorrecto!", "Telefono, debe contener 9 caracteres",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error)
-
-        End If
-
-
-
-        FormularioDatosVentana.Show()
 
 
 

@@ -12,7 +12,10 @@
     End Sub
 
     Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles BtnSalir.Click
-
+        Const YES As Integer = 6
+        If MsgBox("Desea Salir?", MsgBoxStyle.YesNo) = YES Then
+            Application.Exit()
+        End If
     End Sub
 
     Private Sub txtId_Recibido_TextChanged(sender As Object, e As EventArgs) Handles txtId_Recibido.TextChanged
