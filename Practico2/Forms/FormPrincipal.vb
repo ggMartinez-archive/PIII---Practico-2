@@ -6,6 +6,7 @@
         ' formulario en sus atributos, y ejecutando los metodos de validacion.
         ' Una vez validado el formulario, se debe mostrar FormularioDatos con la
         ' informacion proveniente de este formulario.
+<<<<<<< HEAD
 
         Dim p As New Persona()
         Dim FormularioDatosVentana As New FormularioDatos()
@@ -81,6 +82,10 @@
 
 
 
+=======
+
+        Dim p As New Persona
+>>>>>>> 269176224c64c1b0eaf5934df3dedc67cc5b553e
 
 
     End Sub
