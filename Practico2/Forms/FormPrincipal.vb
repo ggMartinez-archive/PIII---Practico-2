@@ -8,30 +8,12 @@
 
         Dim p As New Persona
         CargarPersona(p)
-        If p.ValidarID Then
-            If p.ValidaNombre Then
-                If p.ValidarApellido Then
-                    If p.ValidarDireccion Then
-                        'If p.ValidarTelefono Then
-
-                        FrmDatos.Show()
-                        Me.Hide()
-
-                        'Else
-                        'MsgBox("Error en el Telefono")
-                        'End If
-                    Else
-                        MsgBox("Error en la Direccion")
-                    End If
-                Else
-                    MsgBox("Error en el Apellido")
-                End If
-            Else
-                MsgBox("Error en el Nombre")
-            End If
+        ValidacionesCompletas(p)
+        If ValidacionesCompletas(p) = 1 Then
         Else
-            MsgBox("Error en el ID")
+            FrmDatos.Show()
         End If
+
     End Sub
 
     Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles BtnSalir.Click
@@ -43,12 +25,45 @@
     End Sub
 
     Private Sub CargarPersona(p As Persona)
-        p.SetId(txtId.Text)
+        p.SetId(Val(txtId.Text))
+        Console.WriteLine(Val(txtId.Text))
         p.SetNombre(txtNombre.Text)
         p.SetApellido(txtApellido.Text)
-        p.SetDireccion(txtId.Text)
+        p.SetDireccion(txtDireccion.Text)
         p.SetTelefono(txtTelefonos.Text)
     End Sub
+
+    Public Function ValidacionesCompletas(p As Persona)
+        Dim Falso As Integer
+
+        If p.ValidarID Then
+
+        Else
+            Falso = 1
+        End If
+
+        If p.ValidaNombre Then
+        Else
+            Falso = 1
+        End If
+
+        If p.ValidarApellido Then
+        Else
+            Falso = 1
+        End If
+
+        If p.ValidarDireccion Then
+        Else
+            Falso = 1
+        End If
+
+        If p.ValidarTelefono Then
+        Else
+            Falso = 1
+        End If
+
+        Return Falso
+    End Function
 
     Private Sub FrmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

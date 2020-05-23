@@ -48,7 +48,7 @@
 
     Public Function ValidarID()
         ' Validar que sea numero, menor a 99
-        If id < 99 Then
+        If 0 < id < 99 Then
             Return True
         Else
             Return False
@@ -57,7 +57,7 @@
 
     Public Function ValidaNombre()
         ' Validar que tenga menos de 20 caracteres
-        If nombre.Length < 99 Then
+        If 0 < nombre.Length < 99 Then
             Return True
         Else
             Return False
@@ -66,7 +66,7 @@
 
     Public Function ValidarApellido()
         ' Validar que tenga menos de 20 caracteres
-        If apellido.Length < 20 Then
+        If 0 < apellido.Length < 20 Then
             Return True
         Else
             Return False
@@ -75,7 +75,7 @@
 
     Public Function ValidarDireccion()
         ' Validar que tenga menos de 50 caracteres
-        If direccion.Length < 50 Then
+        If 0 < direccion.Length < 50 Then
             Return True
         Else
             Return False
@@ -84,10 +84,11 @@
 
     Public Function ValidarTelefono()
         ' Validar que sea numero, de hasta 9 cifras
-        If telefono <= 9 Then
+        If 0 < telefono.Length <= 9 Then
             Return True
         Else
             Return False
         End If
+
     End Function
 End Class
