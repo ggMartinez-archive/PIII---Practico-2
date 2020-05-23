@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class FormularioDatos
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,29 +22,78 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.LabelId = New System.Windows.Forms.Label()
+        Me.LabelNombre = New System.Windows.Forms.Label()
+        Me.LabelApellido = New System.Windows.Forms.Label()
+        Me.LabelDireccion = New System.Windows.Forms.Label()
+        Me.LabelTelefono = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'LabelId
         '
-        Me.Button1.Location = New System.Drawing.Point(466, 254)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.LabelId.AutoSize = True
+        Me.LabelId.Location = New System.Drawing.Point(75, 58)
+        Me.LabelId.Name = "LabelId"
+        Me.LabelId.Size = New System.Drawing.Size(39, 13)
+        Me.LabelId.TabIndex = 0
+        Me.LabelId.Text = "Label1"
         '
-        'Form1
+        'LabelNombre
+        '
+        Me.LabelNombre.AutoSize = True
+        Me.LabelNombre.Location = New System.Drawing.Point(75, 89)
+        Me.LabelNombre.Name = "LabelNombre"
+        Me.LabelNombre.Size = New System.Drawing.Size(39, 13)
+        Me.LabelNombre.TabIndex = 1
+        Me.LabelNombre.Text = "Label2"
+        '
+        'LabelApellido
+        '
+        Me.LabelApellido.AutoSize = True
+        Me.LabelApellido.Location = New System.Drawing.Point(75, 114)
+        Me.LabelApellido.Name = "LabelApellido"
+        Me.LabelApellido.Size = New System.Drawing.Size(39, 13)
+        Me.LabelApellido.TabIndex = 2
+        Me.LabelApellido.Text = "Label3"
+        '
+        'LabelDireccion
+        '
+        Me.LabelDireccion.AutoSize = True
+        Me.LabelDireccion.Location = New System.Drawing.Point(75, 148)
+        Me.LabelDireccion.Name = "LabelDireccion"
+        Me.LabelDireccion.Size = New System.Drawing.Size(39, 13)
+        Me.LabelDireccion.TabIndex = 3
+        Me.LabelDireccion.Text = "Label4"
+        '
+        'LabelTelefono
+        '
+        Me.LabelTelefono.AutoSize = True
+        Me.LabelTelefono.Location = New System.Drawing.Point(75, 179)
+        Me.LabelTelefono.Name = "LabelTelefono"
+        Me.LabelTelefono.Size = New System.Drawing.Size(39, 13)
+        Me.LabelTelefono.TabIndex = 4
+        Me.LabelTelefono.Text = "Label5"
+        '
+        'FormularioDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
-        Me.Name = "Form1"
+        Me.ClientSize = New System.Drawing.Size(389, 471)
+        Me.Controls.Add(Me.LabelTelefono)
+        Me.Controls.Add(Me.LabelDireccion)
+        Me.Controls.Add(Me.LabelApellido)
+        Me.Controls.Add(Me.LabelNombre)
+        Me.Controls.Add(Me.LabelId)
+        Me.Name = "FormularioDatos"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents LabelId As Label
+    Friend WithEvents LabelNombre As Label
+    Friend WithEvents LabelApellido As Label
+    Friend WithEvents LabelDireccion As Label
+    Friend WithEvents LabelTelefono As Label
 End Class
