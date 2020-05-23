@@ -5,6 +5,7 @@
     Private apellido As String
     Private telefono As String
     Private direccion As String
+    Friend Validacion As Char
 
     Public Sub SetId(idRecibido As String)
         Me.id = idRecibido
@@ -18,7 +19,7 @@
         Me.apellido = apellidoRecibido
     End Sub
 
-    Public Sub SetTelefono(telefonoRecibido As String))
+    Public Sub SetTelefono(telefonoRecibido As String)
         Me.telefono = telefonoRecibido
     End Sub
 
@@ -46,28 +47,58 @@
         Return Me.telefono
     End Function
 
-    Public Function ValidarID()
+    Public Function ValidarID(Validar) As Boolean
         ' Validar que sea numero, menor a 99
-
+        If Char.IsLetter(Validar) Then
+            MsgBox("Solo numeros admitidos")
+            Return False
+        Else
+            If Validar <= 99 Then
+                Return True
+            Else
+                Return False
+            End If
+        End If
     End Function
 
-    Public Function ValidaNombre()
+    Public Function ValidaNombre(Validacion) As Boolean
         ' Validar que tenga menos de 20 caracteres
-
+        If Len(Validacion) < 20 Then
+            Return True
+        Else
+            Return False
+        End If
     End Function
 
-    Public Function ValidarApellido()
+    Public Function ValidarApellido(Validacion) As Boolean
         ' Validar que tenga menos de 20 caracteres
-
+        If Len(Validacion) < 20 Then
+            Return True
+        Else
+            Return False
+        End If
     End Function
 
-    Public Function ValidarDireccion()
+    Public Function ValidarDireccion(Validacion) As Boolean
         ' Validar que tenga menos de 50 caracteres
-
+        If Len(Validacion) < 50 Then
+            Return True
+        Else
+            Return False
+        End If
     End Function
 
-    Public Function ValidarTelefono()
+    Public Function ValidarTelefono(Validar) As Boolean
         ' Validar que sea numero, de hasta 9 cifras
-
+        If Char.IsLetter(Validar) Then
+            MsgBox("Solo numeros admitidos")
+            Return False
+        Else
+            If Len(Validar) <= 9 Then
+                Return True
+            Else
+                Return False
+            End If
+        End If
     End Function
 End Class
