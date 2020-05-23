@@ -26,57 +26,78 @@
         Me.direccion = direccionRecibida
     End Sub
 
-    Public Function GetNombre()
+    Public Function GetNombre(text As String)
         Return Me.nombre
     End Function
 
-    Public Function GetId()
+    Public Function GetId(text As String)
         Return Me.id
     End Function
 
-    Public Function GetApellido()
+    Public Function GetApellido(text As String)
         Return Me.apellido
     End Function
 
-    Public Function GetDireccion()
+    Public Function GetDireccion(text As String)
         Return Me.direccion
     End Function
 
-    Public Function GetTelefono()
+    Public Function GetTelefono(text As Integer)
         Return Me.telefono
     End Function
 
-    Public Function ValidarID()
+    Public Function ValidarID(ByVal id As String)
         ' Validar que sea numero, menor a 99
 
         If (id >= 99) Then
             MsgBox("Error en ID")
             Return False
         Else
-            Return
+            Return Me.id
         End If
 
     End Function
 
-    Public Function ValidaNombre()
+    Public Function ValidaNombre(ByVal nombre As String)
         ' Validar que tenga menos de 20 caracteres
         If (nombre.Length >= 20) Then
             MsgBox("Error en Nombre")
+            Return False
+        Else
+            Return Me.nombre
+
         End If
     End Function
 
-    Public Function ValidarApellido()
+    Public Function ValidarApellido(ByVal apellido As String)
         ' Validar que tenga menos de 20 caracteres
+        If (apellido.Length >= 20) Then
+            MsgBox("Excede máximo de caracteres")
+            Return False
+        Else
+            Return Me.apellido
+        End If
 
     End Function
 
-    Public Function ValidarDireccion()
+    Public Function ValidarDireccion(ByVal direccion As String)
         ' Validar que tenga menos de 50 caracteres
+        If (direccion.Length >= 50) Then
+            Return False
+        Else
+            Return Me.direccion
+        End If
 
     End Function
 
-    Public Function ValidarTelefono()
+    Public Function ValidarTelefono(ByVal telefono As String)
         ' Validar que sea numero, de hasta 9 cifras
+        If (telefono > 999999999) Then
+            Return False
+        Else
+            Return Me.telefono
+
+        End If
 
     End Function
 End Class

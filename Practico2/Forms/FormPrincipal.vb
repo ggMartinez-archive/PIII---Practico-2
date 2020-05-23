@@ -5,10 +5,17 @@
         ' formulario en sus atributos, y ejecutando los metodos de validacion.
         ' Una vez validado el formulario, se debe mostrar FormularioDatos con la
         ' informacion proveniente de este formulario.
-        
+
         Dim p As New Persona
         p.SetId(txtId.Text)
         p.SetNombre(txtNombre.Text)
+        p.SetApellido(txtApellido.Text)
+        p.SetDireccion(txtDireccion.Text)
+        p.ValidarID(txtId.Text)
+        p.ValidaNombre(txtNombre.Text)
+        p.ValidarDireccion(txtDireccion.Text)
+        p.ValidarTelefono(txtTelefonos.Text)
+
 
         FormularioDatos.Show()
 

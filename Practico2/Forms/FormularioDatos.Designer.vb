@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormularioDatos
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,13 @@ Partial Class FormularioDatos
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.LblID = New System.Windows.Forms.Label()
         Me.LblNombre = New System.Windows.Forms.Label()
         Me.LblApellido = New System.Windows.Forms.Label()
         Me.LblDireccion = New System.Windows.Forms.Label()
         Me.LblTelefono = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'LblID
@@ -75,21 +74,11 @@ Partial Class FormularioDatos
         Me.LblTelefono.TabIndex = 4
         Me.LblTelefono.Text = "Telefono"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(159, 37)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Label1"
-        '
         'FormularioDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(325, 368)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LblTelefono)
         Me.Controls.Add(Me.LblDireccion)
         Me.Controls.Add(Me.LblApellido)
@@ -107,5 +96,4 @@ Partial Class FormularioDatos
     Friend WithEvents LblApellido As Label
     Friend WithEvents LblDireccion As Label
     Friend WithEvents LblTelefono As Label
-    Friend WithEvents Label1 As Label
 End Class
