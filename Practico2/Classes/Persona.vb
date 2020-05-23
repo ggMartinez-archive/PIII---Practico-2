@@ -92,7 +92,7 @@
 
     Public Function ValidarTelefono(ByVal telefono As String)
         ' Validar que sea numero, de hasta 9 cifras
-        If (telefono > 999999999) Then
+        If (telefono.Length > 9) Then
             Return False
         Else
             Return Me.telefono
