@@ -43,6 +43,7 @@ Partial Class FrmPrincipal
         Me.BtnEnviar.Size = New System.Drawing.Size(100, 23)
         Me.BtnEnviar.TabIndex = 0
         Me.BtnEnviar.Text = "Enviar"
+        Me.BtnEnviar.UseCompatibleTextRendering = True
         Me.BtnEnviar.UseVisualStyleBackColor = True
         '
         'txtId
