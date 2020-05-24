@@ -7,6 +7,11 @@
         ' informacion proveniente de este formulario.
 
         Dim p As New Persona
+        p.SetId(idRecibido:=txtId.Text)
+        p.SetNombre(nombreRecibido:=txtNombre.Text)
+        p.SetApellido(apellidoRecibido:=txtNombre.Text)
+        p.SetDireccion(direccionRecibida:=txtDireccion.Text)
+        p.SetTelefono(telefonoRecibido:=txtTelefonos.Text)
 
 
     End Sub

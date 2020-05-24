@@ -48,26 +48,31 @@
 
     Public Function ValidarID()
         ' Validar que sea numero, menor a 99
-
+        Dim id As Boolean = If(Me.id < 99, True, False)
+        Return id
     End Function
 
     Public Function ValidaNombre()
         ' Validar que tenga menos de 20 caracteres
-
+        Dim nombre As Boolean = If(Me.nombre.Length < 20, True, False)
+        Return nombre
     End Function
 
     Public Function ValidarApellido()
         ' Validar que tenga menos de 20 caracteres
-
+        Dim apellido As Boolean = If(Me.apellido.Length < 20, True, False)
+        Return apellido
     End Function
 
     Public Function ValidarDireccion()
         ' Validar que tenga menos de 50 caracteres
-
+        Dim direccion As Boolean = If(Me.direccion.Length < 50, True, False)
+        Return direccion
     End Function
 
     Public Function ValidarTelefono()
         ' Validar que sea numero, de hasta 9 cifras
-
+        Dim telefono As Boolean = If(Me.telefono.Length < 10, True, False)
+        Return telefono
     End Function
 End Class

@@ -74,6 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Persona.vb" />
+    <Compile Include="Forms\FormMostrarDatosDePersona.Designer.vb">
+      <DependentUpon>FormMostrarDatosDePersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMostrarDatosDePersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FormPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\FormMostrarDatosDePersona.resx">
+      <DependentUpon>FormMostrarDatosDePersona.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </EmbeddedResource>
