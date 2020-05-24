@@ -34,51 +34,51 @@ Partial Class FormularioDatos
         Me.LabelId.AutoSize = True
         Me.LabelId.Location = New System.Drawing.Point(75, 58)
         Me.LabelId.Name = "LabelId"
-        Me.LabelId.Size = New System.Drawing.Size(39, 13)
+        Me.LabelId.Size = New System.Drawing.Size(16, 13)
         Me.LabelId.TabIndex = 0
-        Me.LabelId.Text = "Label1"
+        Me.LabelId.Text = "Id"
         '
         'LabelNombre
         '
         Me.LabelNombre.AutoSize = True
         Me.LabelNombre.Location = New System.Drawing.Point(75, 89)
         Me.LabelNombre.Name = "LabelNombre"
-        Me.LabelNombre.Size = New System.Drawing.Size(39, 13)
+        Me.LabelNombre.Size = New System.Drawing.Size(44, 13)
         Me.LabelNombre.TabIndex = 1
-        Me.LabelNombre.Text = "Label2"
+        Me.LabelNombre.Text = "Nombre"
         '
         'LabelApellido
         '
         Me.LabelApellido.AutoSize = True
         Me.LabelApellido.Location = New System.Drawing.Point(75, 114)
         Me.LabelApellido.Name = "LabelApellido"
-        Me.LabelApellido.Size = New System.Drawing.Size(39, 13)
+        Me.LabelApellido.Size = New System.Drawing.Size(44, 13)
         Me.LabelApellido.TabIndex = 2
-        Me.LabelApellido.Text = "Label3"
+        Me.LabelApellido.Text = "Apellido"
         '
         'LabelDireccion
         '
         Me.LabelDireccion.AutoSize = True
         Me.LabelDireccion.Location = New System.Drawing.Point(75, 148)
         Me.LabelDireccion.Name = "LabelDireccion"
-        Me.LabelDireccion.Size = New System.Drawing.Size(39, 13)
+        Me.LabelDireccion.Size = New System.Drawing.Size(52, 13)
         Me.LabelDireccion.TabIndex = 3
-        Me.LabelDireccion.Text = "Label4"
+        Me.LabelDireccion.Text = "Direccion"
         '
         'LabelTelefono
         '
         Me.LabelTelefono.AutoSize = True
         Me.LabelTelefono.Location = New System.Drawing.Point(75, 179)
         Me.LabelTelefono.Name = "LabelTelefono"
-        Me.LabelTelefono.Size = New System.Drawing.Size(39, 13)
+        Me.LabelTelefono.Size = New System.Drawing.Size(49, 13)
         Me.LabelTelefono.TabIndex = 4
-        Me.LabelTelefono.Text = "Label5"
+        Me.LabelTelefono.Text = "Telefono"
         '
         'FormularioDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(389, 471)
+        Me.ClientSize = New System.Drawing.Size(237, 275)
         Me.Controls.Add(Me.LabelTelefono)
         Me.Controls.Add(Me.LabelDireccion)
         Me.Controls.Add(Me.LabelApellido)
