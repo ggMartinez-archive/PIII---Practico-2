@@ -78,7 +78,7 @@ Partial Class FormularioDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(237, 275)
+        Me.ClientSize = New System.Drawing.Size(249, 284)
         Me.Controls.Add(Me.LabelTelefono)
         Me.Controls.Add(Me.LabelDireccion)
         Me.Controls.Add(Me.LabelApellido)
