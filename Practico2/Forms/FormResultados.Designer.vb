@@ -22,9 +22,16 @@ Partial Class FormResultados
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        Me.SuspendLayout()
+        '
+        'FormResultados
+        '
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(384, 461)
+        Me.Name = "FormResultados"
+        Me.Text = "Datos Usuarios"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class
