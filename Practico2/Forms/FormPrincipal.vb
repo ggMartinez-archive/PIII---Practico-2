@@ -10,6 +10,15 @@
 
 
     End Sub
+    Private Sub CargaDatos(p As Persona)
+        p.SetId(txtId.Text)
+        p.SetNombre(txtNombre.Text)
+        p.SetApellido(txtApellido.Text)
+        p.SetDireccion(txtDireccion.Text)
+        p.SetTelefono(Len(txtbTelefono.Text))
+
+
+    End Sub
 
     Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles BtnSalir.Click
         Const YES As Integer = 6
@@ -18,4 +27,5 @@
             Application.Exit()
         End If
     End Sub
+
 End Class

@@ -33,7 +33,7 @@ Partial Class FrmPrincipal
         Me.lblDireccion = New System.Windows.Forms.Label()
         Me.lblTelefono = New System.Windows.Forms.Label()
         Me.BtnSalir = New System.Windows.Forms.Button()
-        Me.txtTelefonos = New System.Windows.Forms.TextBox()
+        Me.txtbTelefono = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'BtnEnviar
@@ -48,6 +48,7 @@ Partial Class FrmPrincipal
         'txtId
         '
         Me.txtId.Location = New System.Drawing.Point(126, 12)
+        Me.txtId.MaxLength = 2
         Me.txtId.Name = "txtId"
         Me.txtId.Size = New System.Drawing.Size(100, 20)
         Me.txtId.TabIndex = 1
@@ -55,6 +56,7 @@ Partial Class FrmPrincipal
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(126, 38)
+        Me.txtNombre.MaxLength = 20
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(100, 20)
         Me.txtNombre.TabIndex = 2
@@ -62,6 +64,7 @@ Partial Class FrmPrincipal
         'txtApellido
         '
         Me.txtApellido.Location = New System.Drawing.Point(126, 64)
+        Me.txtApellido.MaxLength = 20
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(100, 20)
         Me.txtApellido.TabIndex = 3
@@ -69,6 +72,7 @@ Partial Class FrmPrincipal
         'txtDireccion
         '
         Me.txtDireccion.Location = New System.Drawing.Point(126, 89)
+        Me.txtDireccion.MaxLength = 50
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(100, 20)
         Me.txtDireccion.TabIndex = 5
@@ -129,13 +133,14 @@ Partial Class FrmPrincipal
         Me.BtnSalir.Text = "Salir"
         Me.BtnSalir.UseVisualStyleBackColor = False
         '
-        'txtTelefonos
+        'txtbTelefono
         '
-        Me.txtTelefonos.Location = New System.Drawing.Point(126, 117)
-        Me.txtTelefonos.Multiline = True
-        Me.txtTelefonos.Name = "txtTelefonos"
-        Me.txtTelefonos.Size = New System.Drawing.Size(100, 106)
-        Me.txtTelefonos.TabIndex = 14
+        Me.txtbTelefono.Location = New System.Drawing.Point(126, 117)
+        Me.txtbTelefono.MaxLength = 9
+        Me.txtbTelefono.Multiline = True
+        Me.txtbTelefono.Name = "txtbTelefono"
+        Me.txtbTelefono.Size = New System.Drawing.Size(100, 106)
+        Me.txtbTelefono.TabIndex = 14
         '
         'FrmPrincipal
         '
@@ -143,7 +148,7 @@ Partial Class FrmPrincipal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(244, 299)
         Me.ControlBox = False
-        Me.Controls.Add(Me.txtTelefonos)
+        Me.Controls.Add(Me.txtbTelefono)
         Me.Controls.Add(Me.BtnSalir)
         Me.Controls.Add(Me.lblTelefono)
         Me.Controls.Add(Me.lblDireccion)
@@ -157,6 +162,7 @@ Partial Class FrmPrincipal
         Me.Controls.Add(Me.BtnEnviar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "FrmPrincipal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Principal"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -174,5 +180,5 @@ Partial Class FrmPrincipal
     Friend WithEvents lblDireccion As Label
     Friend WithEvents lblTelefono As Label
     Friend WithEvents BtnSalir As Button
-    Friend WithEvents txtTelefonos As TextBox
+    Friend WithEvents txtbTelefono As TextBox
 End Class

@@ -46,9 +46,17 @@
         Return Me.telefono
     End Function
 
-    Public Function ValidarID()
-        ' Validar que sea numero, menor a 99
+    Public Function ValidarID() As Boolean
+        Dim valido As Boolean
+        Dim numero As Integer
 
+        numero = Convert.ToInt16(GetId)
+
+        If numero <= 99 Then
+            valido = True
+        End If
+        ' Validar que sea numero, menor a 99
+        Return valido
     End Function
 
     Public Function ValidaNombre()
