@@ -8,12 +8,15 @@
 
         Dim p As New Persona
         p.SetId(idRecibido:=txtId.Text)
-
-        'p.SetNombre(nombreRecibido:=txtNombre.Text)
-        'p.SetApellido(apellidoRecibido:=txtNombre.Text)
-        'p.SetDireccion(direccionRecibida:=txtDireccion.Text)
-        'p.SetTelefono(telefonoRecibido:=txtTelefonos.Text)
-
+        p.ValidarID(id:=txtId.Text)
+        p.SetNombre(nombreRecibido:=txtNombre.Text)
+        p.ValidaNombre(nombre:=txtNombre.Text)
+        p.SetApellido(apellidoRecibido:=txtNombre.Text)
+        p.ValidarApellido(apellido:=txtApellido.Text)
+        p.SetDireccion(direccionRecibida:=txtDireccion.Text)
+        p.ValidarDireccion(direccion:=txtDireccion.Text)
+        p.SetTelefono(telefonoRecibido:=txtTelefonos.Text)
+        p.ValidarTelefono(telefono:=txtTelefonos.Text)
 
     End Sub
 
@@ -23,9 +26,5 @@
         If MsgBox("Desea Salir?", MsgBoxStyle.YesNo) = YES Then
             Application.Exit()
         End If
-    End Sub
-
-    Private Sub FrmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

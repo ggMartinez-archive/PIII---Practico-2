@@ -48,34 +48,26 @@
 
     Public Function ValidarID(id As Integer)
         ' Validar que sea numero, menor a 99
-        If Me.id < 99 Then
-            Return True
-        Else
-            Return MsgBox("La ID debe ser menor a 99")
-        End If
+        Return If(Me.id < 99, True, DirectCast(MsgBox("La ID debe ser menor a 99"), Object))
     End Function
 
-    Public Function ValidaNombre()
+    Public Function ValidaNombre(nombre As String)
         ' Validar que tenga menos de 20 caracteres
-        Dim nombre As Boolean = If(Me.nombre.Length < 20, True, False)
-        Return nombre
+        Return If(nombre.Length < 20, True, DirectCast(MsgBox("El nombre debe tener menos de 20 caracteres"), Object))
     End Function
 
-    Public Function ValidarApellido()
+    Public Function ValidarApellido(apellido)
         ' Validar que tenga menos de 20 caracteres
-        Dim apellido As Boolean = If(Me.apellido.Length < 20, True, False)
-        Return apellido
+        Return If(apellido.Length < 20, True, DirectCast(MsgBox("El apellido debe tener menos de 20 caracteres"), Object))
     End Function
 
-    Public Function ValidarDireccion()
+    Public Function ValidarDireccion(direccion As String)
         ' Validar que tenga menos de 50 caracteres
-        Dim direccion As Boolean = If(Me.direccion.Length < 50, True, False)
-        Return direccion
+        Return If(direccion.Length < 20, True, DirectCast(MsgBox("La direccion debe tener menos de 50 caracteres"), Object))
     End Function
 
-    Public Function ValidarTelefono()
+    Public Function ValidarTelefono(telefono As String)
         ' Validar que sea numero, de hasta 9 cifras
-        Dim telefono As Boolean = If(Me.telefono.Length < 10, True, False)
-        Return telefono
+        Return If(nombre.Length < 20, True, DirectCast(MsgBox("El telefono debe tener 9 cifras"), Object))
     End Function
 End Class
