@@ -18,7 +18,7 @@
         Me.apellido = apellidoRecibido
     End Sub
 
-    Public Sub SetTelefono(telefonoRecibido As String))
+    Public Sub SetTelefono(telefonoRecibido As String)
         Me.telefono = telefonoRecibido
     End Sub
 
@@ -26,48 +26,49 @@
         Me.direccion = direccionRecibida
     End Sub
 
-    Public Function GetNombre()
+    Public Function GetNombre() As String
         Return Me.nombre
     End Function
 
-    Public Function GetId()
+    Public Function GetId() As Integer
         Return Me.id
     End Function
 
-    Public Function GetApellido()
+    Public Function GetApellido() As String
         Return Me.apellido
     End Function
 
-    Public Function GetDireccion()
+    Public Function GetDireccion() As String
         Return Me.direccion
     End Function
 
-    Public Function GetTelefono()
+    Public Function GetTelefono() As String
         Return Me.telefono
     End Function
 
-    Public Function ValidarID()
+    Public Function ValidarID() As Boolean
+
         ' Validar que sea numero, menor a 99
-
+        Return True
     End Function
 
-    Public Function ValidaNombre()
+    Public Function ValidaNombre() As Boolean
         ' Validar que tenga menos de 20 caracteres
-
+        Return True
     End Function
 
-    Public Function ValidarApellido()
+    Public Function ValidarApellido() As Boolean
         ' Validar que tenga menos de 20 caracteres
-
+        Return True
     End Function
 
-    Public Function ValidarDireccion()
+    Public Function ValidarDireccion() As Boolean
         ' Validar que tenga menos de 50 caracteres
-
+        Return True
     End Function
 
-    Public Function ValidarTelefono()
+    Public Function ValidarTelefono() As Boolean
         ' Validar que sea numero, de hasta 9 cifras
-
+        Return True
     End Function
 End Class
