@@ -134,7 +134,7 @@ Partial Class FrmPrincipal
         Me.txtTelefonos.Location = New System.Drawing.Point(126, 117)
         Me.txtTelefonos.Multiline = True
         Me.txtTelefonos.Name = "txtTelefonos"
-        Me.txtTelefonos.Size = New System.Drawing.Size(100, 106)
+        Me.txtTelefonos.Size = New System.Drawing.Size(100, 22)
         Me.txtTelefonos.TabIndex = 14
         '
         'FrmPrincipal
