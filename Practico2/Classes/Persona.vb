@@ -18,7 +18,7 @@
         Me.apellido = apellidoRecibido
     End Sub
 
-    Public Sub SetTelefono(telefonoRecibido As String))
+    Public Sub SetTelefono(telefonoRecibido As String)
         Me.telefono = telefonoRecibido
     End Sub
 
@@ -46,10 +46,13 @@
         Return Me.telefono
     End Function
 
-    Public Function ValidarID()
+    Public Function ValidarID(id As Integer)
         ' Validar que sea numero, menor a 99
-        Dim id As Boolean = If(Me.id < 99, True, False)
-        Return id
+        If Me.id < 99 Then
+            Return True
+        Else
+            Return MsgBox("La ID debe ser menor a 99")
+        End If
     End Function
 
     Public Function ValidaNombre()
