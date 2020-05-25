@@ -74,10 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Persona.vb" />
-    <Compile Include="Forms\FormDatos.Designer.vb">
-      <DependentUpon>FormDatos.vb</DependentUpon>
+    <Compile Include="Forms\FormularioDatos.Designer.vb">
+      <DependentUpon>FormularioDatos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormDatos.vb">
+    <Compile Include="Forms\FormularioDatos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormPrincipal.vb">
@@ -87,7 +87,7 @@
       <DependentUpon>FormPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\DatosPersonas.vb" />
+    <Compile Include="Modulos\ModuloVarios.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -108,8 +108,8 @@
     <EmbeddedResource Include="Forms\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormDatos.resx">
-      <DependentUpon>FormDatos.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\FormularioDatos.resx">
+      <DependentUpon>FormularioDatos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -47,33 +47,28 @@
     End Function
 
     Public Function ValidarID() As Boolean
-        Dim valido As Boolean
-        Dim numero As Integer
-        numero = Convert.ToInt16(GetId)
-        If numero <= 99 Then
-            valido = True
-        End If
+
         ' Validar que sea numero, menor a 99
-        Return valido
+        Return True
     End Function
 
-    Public Function ValidaNombre()
+    Public Function ValidaNombre() As Boolean
         ' Validar que tenga menos de 20 caracteres
-
+        Return True
     End Function
 
-    Public Function ValidarApellido()
+    Public Function ValidarApellido() As Boolean
         ' Validar que tenga menos de 20 caracteres
-
+        Return True
     End Function
 
-    Public Function ValidarDireccion()
+    Public Function ValidarDireccion() As Boolean
         ' Validar que tenga menos de 50 caracteres
-
+        Return True
     End Function
 
-    Public Function ValidarTelefono()
+    Public Function ValidarTelefono() As Boolean
         ' Validar que sea numero, de hasta 9 cifras
-
+        Return True
     End Function
 End Class
