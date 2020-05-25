@@ -81,12 +81,11 @@ Partial Class FormDatos
         '
         'lblTelefonoResultado
         '
-        Me.lblTelefonoResultado.AutoSize = True
         Me.lblTelefonoResultado.BackColor = System.Drawing.Color.White
         Me.lblTelefonoResultado.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTelefonoResultado.Location = New System.Drawing.Point(12, 422)
         Me.lblTelefonoResultado.Name = "lblTelefonoResultado"
-        Me.lblTelefonoResultado.Size = New System.Drawing.Size(77, 24)
+        Me.lblTelefonoResultado.Size = New System.Drawing.Size(360, 96)
         Me.lblTelefonoResultado.TabIndex = 4
         Me.lblTelefonoResultado.Text = "telefono"
         Me.lblTelefonoResultado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -156,11 +155,11 @@ Partial Class FormDatos
         Me.Label1.Text = "Datos Peronales"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'FormResultados
+        'FormDatos
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(384, 461)
+        Me.ClientSize = New System.Drawing.Size(384, 527)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblTelefono)
         Me.Controls.Add(Me.lblDireccion)
@@ -172,11 +171,10 @@ Partial Class FormDatos
         Me.Controls.Add(Me.lblApellidoResultado)
         Me.Controls.Add(Me.lblNombreResultado)
         Me.Controls.Add(Me.lblIDResultado)
-        Me.Name = "FormResultados"
+        Me.Name = "FormDatos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Datos Usuarios"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 

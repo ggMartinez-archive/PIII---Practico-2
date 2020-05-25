@@ -7,15 +7,24 @@
         ' informacion proveniente de este formulario.
 
         Dim p As New Persona
-
+        CargaDatos(p)
+        FormDatos.Show()
 
     End Sub
     Private Sub CargaDatos(p As Persona)
-        p.SetId(txtId.Text)
+
+
+        p.SetId(CInt(txtId.Text))
         p.SetNombre(txtNombre.Text)
         p.SetApellido(txtApellido.Text)
         p.SetDireccion(txtDireccion.Text)
-        p.SetTelefono(Len(txtbTelefono.Text))
+        p.SetTelefono(txtbTelefono.Text)
+
+        DatosPersonas.identificador = Convert.ToString(p.GetId())
+        DatosPersonas.nombre = p.GetNombre()
+        DatosPersonas.apellido = p.GetApellido()
+        DatosPersonas.direccion = p.GetDireccion()
+        DatosPersonas.telefono = p.GetTelefono()
 
 
     End Sub

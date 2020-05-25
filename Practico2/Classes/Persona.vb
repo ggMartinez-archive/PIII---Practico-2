@@ -26,32 +26,30 @@
         Me.direccion = direccionRecibida
     End Sub
 
-    Public Function GetNombre()
+    Public Function GetNombre() As String
         Return Me.nombre
     End Function
 
-    Public Function GetId()
+    Public Function GetId() As Integer
         Return Me.id
     End Function
 
-    Public Function GetApellido()
+    Public Function GetApellido() As String
         Return Me.apellido
     End Function
 
-    Public Function GetDireccion()
+    Public Function GetDireccion() As String
         Return Me.direccion
     End Function
 
-    Public Function GetTelefono()
+    Public Function GetTelefono() As String
         Return Me.telefono
     End Function
 
     Public Function ValidarID() As Boolean
         Dim valido As Boolean
         Dim numero As Integer
-
         numero = Convert.ToInt16(GetId)
-
         If numero <= 99 Then
             valido = True
         End If
